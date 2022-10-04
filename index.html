@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>icoder heaven for pro</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">icoder</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about.html">about</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Topics
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">technology</a></li>
+                            <li><a class="dropdown-item" href="#">machine learning</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">write for use</a></li>
+                            <li><a class="dropdown-item" href="#">help us</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contect.html">Contect us</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">Search</button>
+                </form>
+                <div class="mx-2">
+                    <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+                    <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#signupModal">signUp</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <!--login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="loginModalLabel">Login to icoder</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                        <label for="floatingInput">Email address</label>
+                    </div>
+                    <div class="form-floating">
+                        <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                        <label for="floatingPassword">Password</label>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">login</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--signUp Modal -->
+    <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="signupModalLabel">Get to icoder</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-body">
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                            <label for="floatingInput">Email address</label>
+                        </div>
+                        <div class="form-floating">
+                            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                            <label for="floatingPassword">Password</label>
+                        </div>
+                        <div class="form-floating">
+                            <input type="password" class="form-control" id="floatingPassword" placeholder="rRePassword">
+                            <label for="floatingPassword">Conform Password</label>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">signup</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="false">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://images.unsplash.com/photo-1481349518771-20055b2a7b24?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=370&q=80"
+                        class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Our life like this</h5>
+                        <p>Some representative placeholder content for the first slide.</p>
+                        <button class="btn btn-danger">Tech.</button>
+                        <button class="btn btn-primary">machine learning</button>
+                        <button class="btn btn-success">web dev.</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=370&q=80"
+                        class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>latest technology like this</h5>
+                        <p>Some representative placeholder content for the second slide.</p>
+                        <button class="btn btn-danger">Tech.</button>
+                        <button class="btn btn-primary">machine learning</button>
+                        <button class="btn btn-success">web dev.</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://images.unsplash.com/photo-1580894742597-87bc8789db3d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=370&q=80"
+                        class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Future technology like this</h5>
+                        <p>Some representative placeholder content for the third slide.</p>
+                        <button class="btn btn-danger">Tech.</button>
+                        <button class="btn btn-primary">machine learning</button>
+                        <button class="btn btn-success">web dev.</button>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <div class="container my-1">
+            <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+                <div class="col">
+                    <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                        style="background-image: url('data:image/jpeg;base64,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');">
+                        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Short title, long jacket</h3>
+                            <ul class="d-flex list-unstyled mt-auto">
+                                <li class="me-auto">
+                                    <img src="https://thumbs.dreamstime.com/b/photo-179923290.jpg" alt="Bootstrap"
+                                        width="32" height="32" class="rounded-circle border border-white">
+                                </li>
+                                <li class="d-flex align-items-center me-3">
+                                    <svg class="bi me-2" width="1em" height="1em">
+                                        <use xlink:href="#geo-fill"></use>
+                                    </svg>
+                                    <small>Earth</small>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <svg class="bi me-2" width="1em" height="1em">
+                                        <use xlink:href="#calendar3"></use>
+                                    </svg>
+                                    <small>3d</small>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                        style="background-image: url('https://img.pikbest.com/templates/20210715/bg/31a989f0daf32.jpg!c1024wm0');">
+                        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Much longer title that wraps to multiple
+                                lines
+                            </h3>
+                            <ul class="d-flex list-unstyled mt-auto">
+                                <li class="me-auto">
+                                    <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32"
+                                        class="rounded-circle border border-white">
+                                </li>
+                                <li class="d-flex align-items-center me-3">
+                                    <svg class="bi me-2" width="1em" height="1em">
+                                        <use xlink:href="#geo-fill"></use>
+                                    </svg>
+                                    <small>Pakistan</small>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <svg class="bi me-2" width="1em" height="1em">
+                                        <use xlink:href="#calendar3"></use>
+                                    </svg>
+                                    <small>4d</small>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                        style="background-image: url('https://www.srijan.net/hubfs/Srijan%20Blog%20-2021/Championing-the-Art-of-Managing-API-as-a-Product.png');">
+                        <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Another longer title belongs here</h3>
+                            <ul class="d-flex list-unstyled mt-auto">
+                                <li class="me-auto">
+                                    <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32"
+                                        class="rounded-circle border border-white">
+                                </li>
+                                <li class="d-flex align-items-center me-3">
+                                    <svg class="bi me-2" width="1em" height="1em">
+                                        <use xlink:href="#geo-fill"></use>
+                                    </svg>
+                                    <small>California</small>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <svg class="bi me-2" width="1em" height="1em">
+                                        <use xlink:href="#calendar3"></use>
+                                    </svg>
+                                    <small>5d</small>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="container">
+            <p class="float-right"><a href="#">back to top</a></p>
+            <p>© 2022–2025 Company, Inc, + <a href="#">Privacy</a> + <a href="#">Terms</a></p>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>
